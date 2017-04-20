@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.piotrwysocki.warsawtourtop10.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorOldTown" />
+
+            <TextView
+                android:id="@+id/old_town"
+                style="@style/CategoryStyle"
+                android:text="@string/category_old_town" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorFryderykChopin" />
+
+            <TextView
+                android:id="@+id/fryderyk_chopin"
+                style="@style/CategoryStyle"
+                android:text="@string/category_fryderyk_chopin" />
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorRisingMuseum" />
+
+            <TextView
+                android:id="@+id/rising_museum"
+                style="@style/CategoryStyle"
+                android:text="@string/category_rising_museum" />
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorPalaceOfCulture" />
+
+            <TextView
+                android:id="@+id/palace_of_culture"
+                style="@style/CategoryStyle"
+                android:text="@string/category_palace_of_cul_and_sci" />
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorRoyalResidences" />
+
+            <TextView
+                android:id="@+id/royal_residences"
+                style="@style/CategoryStyle"
+                android:text="@string/category_royal_residences" />
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorJudaica" />
+
+            <TextView
+                android:id="@+id/judaica"
+                style="@style/CategoryStyle"
+                android:text="@string/category_judaica" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorCopernicus" />
+
+            <TextView
+                android:id="@+id/copernicus"
+                style="@style/CategoryStyle"
+                android:text="@string/category_copernicus" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorNationalMuseum" />
+
+            <TextView
+                android:id="@+id/national_museum"
+                style="@style/CategoryStyle"
+                android:text="@string/category_national_museum" />
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorVistula" />
+
+            <TextView
+                android:id="@+id/vistula"
+                style="@style/CategoryStyle"
+                android:text="@string/category_vistula" />
+
+        </LinearLayout>
+
+        <View style="@style/DividerStyle" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/item_image_width"
+                android:layout_height="@dimen/list_item_height"
+                android:background="@color/colorPGENarodowy" />
+
+            <TextView
+                android:id="@+id/pge_narodowy_stadium"
+                style="@style/CategoryStyle"
+                android:text="@string/category_pge_narodowy" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.piotrwysocki.warsawtourtop10.PGENarodowyActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorPGENarodowy"
+            android:contentDescription="@string/deep_orange_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/pgeNarodowyHeaderItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/pgeNarodowyHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/pge_narodowy_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+
+                <RelativeLayout
+                    android:id="@+id/pgeNarodowyMap"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/pgeNarodowyHeader"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/pgeNarodowyMapIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/map"
+                        android:src="@drawable/ic_map_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pgeNarodowyMapIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/map"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pgeNarodowyPage"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/pgeNarodowyHeader"
+                    android:layout_toRightOf="@id/pgeNarodowyMap"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/pgeNarodowyPageIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/web_page"
+                        android:src="@drawable/ic_web_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/pgeNarodowyPageIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/web_page"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/pgeNarodowyBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/pgeNarodowyHeaderItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:text="@string/pge_narodowy_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/pge_narodowy_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/pgeNarodowyBody"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/pgeNarodowyWorthVisitingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/pgeNarodowyWorthVisiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_visiting"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pgeNarodowyWorthVisitingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pge_narodowy_whole_stadium" />
+
+                    <TextView
+                        android:id="@+id/pgeNarodowyWholeStadiumPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/pge_narodowy_whole_stadium_page"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/pgeNarodowyWorthKnowingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/pgeNarodowyWorthKnowing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_knowing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/pgeNarodowyWorthKnowingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/pge_narodowy_grounds" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/pge_narodowy_cinema" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/pge_narodowy_capacity" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

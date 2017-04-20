@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.piotrwysocki.warsawtourtop10.JudaicaActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorJudaica"
+            android:contentDescription="@string/lime_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/judaicaHeaderItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/judaicaHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/judaica_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/judaicaBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/judaicaHeaderItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:text="@string/judaica_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/judaica_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/judaicaBody"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/judaicaWorthVisitingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/judaicaWorthVisiting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_visiting"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/judaicaWorthVisitingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/judaica_polin_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/judaicaPolinPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/judaica_polin_page"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/judaica_polin_body" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/judaica_polin_grzybowski_square" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/judaicaWorthKnowingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/judaicaWorthKnowing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_knowing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/judaicaWorthKnowingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/judaica_ghetto_wall" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/judaica_festivals" />
+
+                    <TextView
+                        android:id="@+id/judaicaFestivalsSingerPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/judaica_festivals_singer_page"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/judaica_festivals_film" />
+
+                    <TextView
+                        android:id="@+id/judaicaFestivalsFilmPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/judaica_festivals_film_page"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/judaica_festivals_anniversary" />
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

@@ -1,0 +1,270 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.piotrwysocki.warsawtourtop10.RisingMuseumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorRisingMuseum"
+            android:contentDescription="@string/teal_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/risingMuseumHeaderItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/risingMuseumHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/rising_museum_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+
+                <RelativeLayout
+                    android:id="@+id/risingMuseumMap"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/risingMuseumHeader"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/risingMuseumMapIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/map"
+                        android:src="@drawable/ic_map_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/risingMuseumMapIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/map"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/risingMuseumPage"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/risingMuseumHeader"
+                    android:layout_toRightOf="@id/risingMuseumMap"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/risingMuseumPageIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/web_page"
+                        android:src="@drawable/ic_web_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/risingMuseumPageIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/web_page"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/risingMuseumBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/risingMuseumHeaderItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:text="@string/rising_museum_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/rising_museum_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/risingMuseumBody"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/risingMuseumWorthKnowingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/risingMuseumWorthKnowing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_knowing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risingMuseumWorthKnowingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rising_museum_every_year" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/risingMuseumWorthHearingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/risingMuseumWorthHearing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_hearing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risingMuseumWorthHearingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rising_museum_the_pounding_heart" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/risingMuseumWorthSeeingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/risingMuseumWorthSeeing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_seeing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/risingMuseumWorthSeeingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/rising_museum_murals" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/rising_museum_liberator" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/rising_museum_city_of_ruins" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.piotrwysocki.warsawtourtop10.OldTownActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorOldTown"
+            android:contentDescription="@string/old_town_content_description" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/oldTownHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/old_town_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+
+                <RelativeLayout
+                    android:id="@+id/oldTownMap"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/oldTownHeader"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/oldTownMapIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/map"
+                        android:src="@drawable/ic_map_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/oldTownMapIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/map"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:text="@string/old_town_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/old_town_body_text" />
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCategoryBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_16dp">
+
+                <ImageView
+                    android:id="@+id/oldTownWorthSeeingArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                <TextView
+                    android:id="@+id/oldTownWorthSeeing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/worth_seeing"
+                    android:textAllCaps="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldTownWorthSeeingBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/mermaid_statue" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="@string/paintings_by_rembrandt" />
+
+                <TextView
+                    android:id="@+id/royalCastlePage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="@dimen/padding_8dp"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="@string/royal_castle_page"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="@dimen/padding_8dp"
+                    android:text="@string/hidden_in_the_basements" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorCategoryBackground"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding_16dp">
+
+                <ImageView
+                    android:id="@+id/oldTownWorthTryingArrow"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                <TextView
+                    android:id="@+id/oldTownWorthTrying"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/worth_trying"
+                    android:textAllCaps="true"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/oldTownWorthTryingBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp"
+                android:visibility="gone">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/wuzetka_and_zygmuntowka" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

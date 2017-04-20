@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.piotrwysocki.warsawtourtop10.NationalMuseumActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorNationalMuseum"
+            android:contentDescription="@string/amber_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/nationalMuseumHeaderItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/nationalMuseumHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/national_museum_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+
+                <RelativeLayout
+                    android:id="@+id/nationalMuseumMap"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/nationalMuseumHeader"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/nationalMuseumMapIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/map"
+                        android:src="@drawable/ic_map_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nationalMuseumMapIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/map"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/nationalMuseumPage"
+                    android:layout_width="88dp"
+                    android:layout_height="62dp"
+                    android:layout_below="@id/nationalMuseumHeader"
+                    android:layout_toRightOf="@id/nationalMuseumMap"
+                    android:paddingBottom="@dimen/padding_10dp"
+                    android:paddingLeft="@dimen/padding_12dp"
+                    android:paddingRight="@dimen/padding_12dp"
+                    android:paddingTop="@dimen/padding_10dp">
+
+                    <ImageView
+                        android:id="@+id/nationalMuseumPageIcon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:contentDescription="@string/web_page"
+                        android:src="@drawable/ic_web_white_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/nationalMuseumPageIcon"
+                        android:layout_centerHorizontal="true"
+                        android:text="@string/web_page"
+                        android:textAppearance="@android:style/TextAppearance.Small"
+                        android:textColor="@color/colorCategoryText" />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/nationalMuseumBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/nationalMuseumHeaderItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:text="@string/national_museum_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/national_museum_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/nationalMuseumBody"
+                android:gravity="bottom"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/nationalMuseumWorthSeeingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/nationalMuseumWorthSeeing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_seeing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/nationalMuseumWorthSeeingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/national_museum_battle_of_grunwald" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/national_museum_faras_galery" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/national_museum_medieval_art_gallery" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/national_museum_gallery_of_art" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/national_museum_temporary_exhibition" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</ScrollView>

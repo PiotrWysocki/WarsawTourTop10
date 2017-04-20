@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="list_item_height">72dp</dimen>
+    <dimen name="item_image_width">16dp</dimen>
+
+    <dimen name="padding_16dp">16dp</dimen>
+    <dimen name="padding_12dp">12dp</dimen>
+    <dimen name="padding_10dp">10dp</dimen>
+    <dimen name="padding_8dp">8dp</dimen>
+    <dimen name="padding_6dp">6dp</dimen>
+
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="height_4dp">4dp</dimen>
+
+</resources>

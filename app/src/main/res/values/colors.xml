@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#f44336</color>
+    <color name="colorPrimaryDark">#d32f2f</color>
+    <color name="colorTextPrimary">#000000</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorCategoryBackground">#000000</color>
+    <color name="colorCategoryText">#E0E0E0</color>
+    <color name="colorOldTown">#03a9f4</color>
+    <color name="colorFryderykChopin">#00bcd4</color>
+    <color name="colorRisingMuseum">#009688</color>
+    <color name="colorPalaceOfCulture">#4caf50</color>
+    <color name="colorRoyalResidences">#8bc34a</color>
+    <color name="colorJudaica">#CDDC39</color>
+    <color name="colorCopernicus">#ffeb3b</color>
+    <color name="colorNationalMuseum">#ffc107</color>
+    <color name="colorVistula">#ff9800</color>
+    <color name="colorPGENarodowy">#ff5722</color>
+</resources>

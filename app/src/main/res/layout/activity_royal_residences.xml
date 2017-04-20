@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context="com.piotrwysocki.warsawtourtop10.RoyalResidencesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="@dimen/item_image_width"
+            android:layout_height="match_parent"
+            android:background="@color/colorRoyalResidences"
+            android:contentDescription="@string/light_grean_background" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/royalResidencesHeaderItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:background="@color/colorCategoryBackground"
+                android:orientation="vertical"
+                android:padding="@dimen/padding_16dp">
+
+                <TextView
+                    android:id="@+id/royalResidencesHeader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:text="@string/royal_residences_header"
+                    android:textAppearance="@android:style/TextAppearance.Medium"
+                    android:textColor="@color/colorCategoryText" />
+            </RelativeLayout>
+
+            <ScrollView
+                android:id="@+id/royalResidencesLazienkiBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/royalResidencesHeaderItem">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royal_residences_lazienki_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/royalResidencesLazienkiPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/royal_residences_lazienki_page"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/royal_residences_lazienki_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/royalResidencesLazienkiWorth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/royalResidencesLazienkiBody"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/royalResidencesLazienkiWorthSeeingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/royalResidencesLazienkiWorthSeeing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_seeing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/royalResidencesLazienkiWorthSeeingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royal_residences_lazienki_park" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/royal_residences_lazienki_amphitheatre" />
+
+                </LinearLayout>
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/height_4dp"
+                    android:background="@color/colorCategoryBackground" />
+            </LinearLayout>
+
+
+            <ScrollView
+                android:id="@+id/royalResidencesWilanowBody"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/royalResidencesLazienkiWorth">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royal_residences_wilanow_header_body_text"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/royalResidencesWilanowPage"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:paddingBottom="@dimen/padding_8dp"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/royal_residences_wilanow_page"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/royal_residences_wilanow_body_text" />
+
+                </LinearLayout>
+            </ScrollView>
+
+            <LinearLayout
+                android:id="@+id/royalResidencesWilanowWorth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/royalResidencesWilanowBody"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/royalResidencesWilanowWorthSeeingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/royalResidencesWilanowWorthSeeing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/worth_seeing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/royalResidencesWilanowWorthSeeingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royal_residences_wilanow_glass_pavilion" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/royal_residences_wilanow_poster_museum" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/colorCategoryBackground"
+                    android:gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:padding="@dimen/padding_16dp">
+
+                    <ImageView
+                        android:id="@+id/royalResidencesWilanowWorthKnowingArrow"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:src="@drawable/ic_keyboard_arrow_right_white_24dp" />
+
+                    <TextView
+                        android:id="@+id/royalResidencesWilanowWorthKnowing"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="@dimen/padding_8dp"
+                        android:text="@string/worth_knowing"
+                        android:textAllCaps="true"
+                        android:textAppearance="@android:style/TextAppearance.Medium"
+                        android:textColor="@color/colorCategoryText" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/royalResidencesWilanowWorthKnowingBody"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/padding_16dp"
+                    android:visibility="gone">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/royal_residences_wilanow_summer_residence" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </LinearLayout>
+
+</ScrollView>
